@@ -50,6 +50,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\EnemyClass.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/home/doofenshmirtz/Development/GMTK2020/It Came From Ctrl/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

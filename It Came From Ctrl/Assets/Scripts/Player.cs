@@ -1,18 +1,21 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private float playerSpeed = 20f;
 
-    // Update is called once per frame
+    private Vector2 _movement;
+
     void Update()
     {
-        
+        CalculateMovement();
+        transform.Translate(_movement);
+    }
+    
+    void CalculateMovement()
+    {
+        _movement = Vector2.zero;
+        _movement.x += Input.GetAxisRaw("Horizontal") * playerSpeed * Time.deltaTime;
+        _movement.y += Input.GetAxisRaw("Vertical") * playerSpeed * Time.deltaTime;
     }
 }
