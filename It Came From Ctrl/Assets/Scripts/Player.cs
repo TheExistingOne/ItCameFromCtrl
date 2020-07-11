@@ -18,4 +18,9 @@ public class Player : MonoBehaviour
         _movement.x += Input.GetAxisRaw("Horizontal") * playerSpeed * Time.deltaTime;
         _movement.y += Input.GetAxisRaw("Vertical") * playerSpeed * Time.deltaTime;
     }
+
+    void Shoot()
+    {
+        
+    }
 }
